@@ -32,7 +32,7 @@ export default function CompanyOverview() {
               Discovering the Future of Data Science
             </Typography>
             <Typography variant="body1" paragraph color="text.secondary" sx={{ fontSize: '1.1rem' }}>
-              MythoQuantum Explorers is at the forefront of data science innovation, combining 
+              NIRDS Explorers is at the forefront of data science innovation, combining 
               cutting-edge research with practical solutions that drive business transformation.
             </Typography>
             <Typography variant="body1" paragraph color="text.secondary" sx={{ fontSize: '1.1rem' }}>

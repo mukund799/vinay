@@ -43,7 +43,7 @@ export default function Navbar() {
               fontSize: '1.5rem'
             }}
           >
-            MythoQuantum
+            NIRDS
           </Typography>
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {navLinks.map((link) => (

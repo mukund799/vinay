@@ -18,17 +18,17 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 
 const socialLinks = [
-  { icon: <LinkedInIcon />, url: 'https://www.linkedin.com/company/mythoquantum-explorers/', name: 'LinkedIn' },
-  { icon: <TwitterIcon />, url: 'https://twitter.com/mythoquantum', name: 'Twitter' },
-  { icon: <InstagramIcon />, url: 'https://www.instagram.com/mythoquantum_explorers', name: 'Instagram' },
+  { icon: <LinkedInIcon />, url: 'https://www.linkedin.com/company/NIRDS-explorers/', name: 'LinkedIn' },
+  { icon: <TwitterIcon />, url: 'https://twitter.com/NIRDS', name: 'Twitter' },
+  { icon: <InstagramIcon />, url: 'https://www.instagram.com/NIRDS_explorers', name: 'Instagram' },
 ];
 
 const contactInfo = [
   {
     icon: <EmailIcon />,
     title: 'Email',
-    content: 'contact@mythoquantum.com',
-    link: 'mailto:contact@mythoquantum.com',
+    content: 'contact@NIRDS.com',
+    link: 'mailto:contact@NIRDS.com',
   },
   {
     icon: <PhoneIcon />,

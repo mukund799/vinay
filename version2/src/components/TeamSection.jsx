@@ -9,7 +9,7 @@ const teamMembers = [
     description: 'Leading innovation in data science and analytics with over a decade of experience in transforming businesses through technology.',
     image: '/manish_mishra.jpg',
     linkedin: 'https://www.linkedin.com/in/manish-mishra/',
-    email: 'manish@mythoquantum.com'
+    email: 'manish@NIRDS.com'
   },
   // Add more team members as needed
 ];

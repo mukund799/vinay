@@ -11,15 +11,15 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const faqs = [
   {
-    question: 'What is MythoQuantum Explorers?',
-    answer: 'MythoQuantum Explorers is an innovative organization committed to delivering data-driven solutions through advanced R&D, data modeling, and analytics. We help businesses harness the full potential of data to optimize performance and achieve sustainable growth.',
+    question: 'What is NIRDS Explorers?',
+    answer: 'NIRDS Explorers is an innovative organization committed to delivering data-driven solutions through advanced R&D, data modeling, and analytics. We help businesses harness the full potential of data to optimize performance and achieve sustainable growth.',
   },
   {
     question: 'What industries do you work with?',
     answer: 'We work with a wide range of industries, including finance, healthcare, manufacturing, supply chain, retail, and more.',
   },
   {
-    question: 'What sets MythoQuantum Explorers apart?',
+    question: 'What sets NIRDS Explorers apart?',
     answer: 'Our ability to combine cutting-edge R&D with advanced data analytics and AI allows us to provide innovative, sustainable, and actionable solutions tailored to meet the specific needs of each client.',
   },
   {

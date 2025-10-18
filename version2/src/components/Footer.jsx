@@ -77,7 +77,7 @@ export default function Footer() {
             color: 'rgba(255, 255, 255, 0.8)'
           }}
         >
-          © 2025 MythoQuantum. All rights reserved.
+          © 2025 NIRDS. All rights reserved.
         </Typography>
       </Container>
     </Box>

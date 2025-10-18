@@ -4,7 +4,7 @@ import { Box, Typography, Paper, Avatar, Container } from '@mui/material';
 const testimonial = {
   name: 'Manish Mishra',
   image: '/manish_mishra.jpg', // You'll need to add this image to your assets folder
-  quote: 'I believe MythoQuantum Explored is on the track of creating a revolutionary change through its data science lab where their rigorous research and development will remark tangible solutions for industry problems.'
+  quote: 'I believe NIRDS Explored is on the track of creating a revolutionary change through its data science lab where their rigorous research and development will remark tangible solutions for industry problems.'
 };
 
 export default function Testimonials() {
