@@ -1,0 +1,15 @@
+/* Global styles and theme variables can be defined here */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  background: #f8f9fb;
+  color: #222;
+}
+
+:root {
+  --primary: #1a237e;
+  --secondary: #00bcd4;
+  --accent: #ff9800;
+  --bg: #f8f9fb;
+  --text: #222;
+}

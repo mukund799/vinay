@@ -77,13 +77,28 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:primefresearch@gmail.com">primefresearch@gmail.com</a></p>
-    <p>Phone: <a href="tel:+918789352791">+91-8789352791</a></p>
-    <p><a href="https://wa.me/918789352791" target="_blank">Chat on WhatsApp</a></p>
-  </section>
+  <div class="contact-inquiry-container">
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:primefresearch@gmail.com">primefresearch@gmail.com</a></p>
+      <p>Phone: <a href="tel:+918789352791">+91-8789352791</a></p>
+      <p><a href="https://wa.me/918789352791" target="_blank">Chat on WhatsApp</a></p>
+    </section>
+
+    <!-- Inquiry Section -->
+    <section id="inquiry">
+      <h2>Inquiry</h2>
+      <form action="https://formsubmit.co/iitmukund@gmail.com" method="POST" class="contact-form">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="mobile" placeholder="Your Mobile Number" required>
+        <textarea name="message" placeholder="Your Description" required></textarea>
+        <button type="submit">Send Inquiry</button>
+      </form>
+    </section>
+  </div>
 
   <footer>
     <p>© 2025 Prime Field Research. All rights reserved.</p>
