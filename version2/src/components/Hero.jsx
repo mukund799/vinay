@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <Box
       sx={{
-        background: 'linear-gradient(135deg, #16216e 0%, #1a237e 100%)',
+        background: 'linear-gradient(135deg, #001F3F 0%, #1a237e 100%)',
         color: 'white',
         minHeight: '100vh',
         display: 'flex',
