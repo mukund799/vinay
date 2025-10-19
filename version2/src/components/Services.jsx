@@ -39,7 +39,7 @@ export default function Services() {
       >
         Services we offer
       </Typography>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} sx={{ display: 'flex' , flexDirection: 'column' }}>
         {services.map((service, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
             <Card 
