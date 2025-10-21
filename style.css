@@ -283,51 +283,74 @@ footer {
 
 /* ====== End Header Hamburger Menu ====== */
 
-/* ===== About Section Enhanced ===== */
+/* ===== About Section Better Layout ===== */
 .about-block {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin: 3rem 0;
+  justify-content: center;
+  gap: 3rem;
+  margin: 3rem auto;
+  max-width: 1100px;  /* keeps section centered and uniform */
+  padding: 1rem;
 }
 
 .about-block.reverse {
   flex-direction: row-reverse;
 }
 
+/* Fixed width for both sides */
+.about-image {
+  flex: 0 0 40%; /* 40% for image, 60% for text */
+  display: flex;
+  justify-content: center;
+}
+
 .about-image img {
   width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .about-text {
-  flex: 1;
+  flex: 0 0 50%;
+  max-width: 500px;
 }
 
 .about-text h3 {
   color: #1e3a8a;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .about-text p {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #333;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* ===== Responsive Layout ===== */
+@media (max-width: 900px) {
   .about-block,
   .about-block.reverse {
     flex-direction: column;
     text-align: center;
   }
 
+  .about-image {
+    flex: none;
+    width: 90%;
+  }
+
+  .about-text {
+    flex: none;
+    width: 90%;
+  }
+
   .about-image img {
     max-width: 100%;
+    height: auto;
   }
 }
-
-/* ===== End About Section Enhanced ===== */
