@@ -301,7 +301,7 @@ footer {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #2563eb;
+  border-color: #0a4344;
   box-shadow: 0 0 6px rgba(37, 99, 235, 0.3);
 }
 
@@ -313,7 +313,7 @@ footer {
 /* Submit Button */
 .contact-form button {
   padding: 0.8rem;
-  background: #2563eb;
+  background: #0a4344;
   color: #ffffff;
   border: none;
   border-radius: 10px;
@@ -323,7 +323,7 @@ footer {
 }
 
 .contact-form button:hover {
-  background: #1d4ed8;
+  background: #0a4344;
 }
 
 /* Responsive Design */
