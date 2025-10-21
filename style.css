@@ -12,11 +12,22 @@ body {
 
 /* ===== logo styling ===== */
 .logo {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
+  gap: 0.75rem; /* spacing between image and text */
+}
+
+.logo img {
+  width: 60px;   /* adjust size as needed */
+  height: 60px;
+  object-fit: contain;
+}
+
+.logo-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .logo h1 {
@@ -26,7 +37,7 @@ body {
 }
 
 .logo .full-logo {
-  font-size: 10px;
+  font-size: 15px;
   color: #ccc;
 }
 
@@ -34,7 +45,7 @@ body {
 
 /* ===== Header Styling ===== */
 header {
-  background: #1a1a1a;
+  background: #0a4344;
   color: #fff;
   padding: 1rem 2rem;
   position: sticky;
@@ -168,7 +179,7 @@ section {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
-  border: 3px solid #0073e6; /* optional */
+  border: 3px solid #0a4344; /* optional */
 }
 
 /* Mobile View: Stack founders vertically */
@@ -184,7 +195,7 @@ section {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #1a1a1a;
+  background: #0a4344;
   color: #fff;
 }
 
