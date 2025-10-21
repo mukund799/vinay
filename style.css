@@ -8,6 +8,14 @@ body {
   font-weight: bold;
   text-align: center;
   margin: 1rem 0;
+  animation: blink 2s step-start infinite;
+
+}
+/* Blink animation */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 /* ===== logo styling ===== */
