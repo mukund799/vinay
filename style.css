@@ -279,3 +279,55 @@ footer {
     color: #0073e6;
   }
 }
+
+
+/* ====== End Header Hamburger Menu ====== */
+
+/* ===== About Section Enhanced ===== */
+.about-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.about-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-block,
+  .about-block.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+}
+
+/* ===== End About Section Enhanced ===== */
