@@ -236,22 +236,29 @@ footer {
 @media (max-width: 768px) {
   header nav {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .menu-toggle {
+    .menu-toggle {
     display: block;
+    margin-left: auto;
+    position: relative;
+    z-index: 1100;
   }
 
-  .nav-links ul {
+    .nav-links ul {
     display: none;
     flex-direction: column;
     background-color: #111;
-    position: absolute;
-    top: 60px;
-    right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     text-align: center;
-    padding: 1rem 0;
+    padding-top: 80px;
+    z-index: 1000;
   }
 
   .nav-links ul.show {
