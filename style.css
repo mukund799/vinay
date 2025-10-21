@@ -213,3 +213,62 @@ footer {
     max-width: 90%;
   }
 }
+
+
+/* ====== Header Hamburger Menu ====== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Default nav links for desktop */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide nav links on mobile by default */
+@media (max-width: 768px) {
+  header nav {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links ul {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links ul.show {
+    display: flex;
+  }
+
+  .nav-links ul li {
+    margin: 15px 0;
+  }
+
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .nav-links ul li a:hover {
+    color: #0073e6;
+  }
+}
