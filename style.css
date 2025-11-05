@@ -425,14 +425,15 @@ footer {
 
 /* Fixed width for both sides */
 .about-image {
-  flex: 0 0 27%; /* 40% for image, 60% for text */
+  /* flex: 0 0 27%; 40% for image, 60% for text */
   display: flex;
   justify-content: center;
 }
 
 .about-image img {
-  width: 100%;
-  max-width: 420px;
+  /* width: 100%; */
+  /* max-width: 420px; */
+  height: 280px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
