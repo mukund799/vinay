@@ -574,10 +574,13 @@ footer {
   flex-direction: column;
   align-items: stretch;
 }
+.project-flex {
+  display: flex;
+}
 
 .project-image {
-  width: 100%;
-  aspect-ratio: 16/9;
+
+  
   max-width: 600px;
   margin: 0 auto;
   overflow: hidden;
@@ -607,6 +610,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+      margin-left: 45px;
 }
 
 .project-card:hover {
@@ -647,6 +651,10 @@ footer {
 
 /* Projects Page Responsive */
 @media (max-width: 768px) {
+  .project-flex{
+    flex-direction: column;
+    align-items: center;
+  }
   .project-hero {
     padding: 3rem 1rem;
   }
@@ -668,17 +676,17 @@ footer {
     font-size: 1.5rem;
   }
 
-  .project-image {
-    aspect-ratio: 16/10;
+  /* .project-image {
+
     max-width: 100vw;
     max-height: 180px;
     min-height: 100px;
-  }
+  } */
 
-  .project-image img {
+  /* .project-image img {
     max-height: 180px;
     min-height: 100px;
-  }
+  } */
 
   .project-content {
     padding: 1rem 0 0 0;
