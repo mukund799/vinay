@@ -525,6 +525,111 @@ footer {
 
 /* ====== End Header Hamburger Menu ====== */
 
+/* ===== Projects Page Styling ===== */
+.project-hero {
+  background: linear-gradient(rgba(10, 67, 68, 0.9), rgba(10, 67, 68, 0.9)), url('images/welcome.png');
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+.project-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.projects-section {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.projects-section h2 {
+  text-align: center;
+  color: #0a4344;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+  color: #0a4344;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.project-card h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 3px;
+  background: #0a4344;
+  border-radius: 2px;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.project-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Projects Page Responsive */
+@media (max-width: 768px) {
+  .project-hero {
+    padding: 3rem 1rem;
+  }
+
+  .project-hero h1 {
+    font-size: 2rem;
+  }
+
+  .projects-section {
+    padding: 3rem 1rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.5rem;
+  }
+}
+
 /* ===== About Section Better Layout ===== */
 #about h2 {
   text-align: center;
