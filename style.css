@@ -239,7 +239,12 @@ section {
 
 
 /* ===== Founders Section ===== */
-
+#founders h2 {
+  text-align: center;
+  color: #0a4344;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
 
 .founders {
   display: flex;
@@ -521,6 +526,13 @@ footer {
 /* ====== End Header Hamburger Menu ====== */
 
 /* ===== About Section Better Layout ===== */
+#about h2 {
+  text-align: center;
+  color: #0a4344;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
 .about-block {
   display: flex;
   align-items: center;
