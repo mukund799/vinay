@@ -313,6 +313,11 @@ section {
     flex-direction: column;
     gap: 1.5rem;
   }
+  .founder {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
 /* ===== Founder Section End ===== */
