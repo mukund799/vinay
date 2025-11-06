@@ -1,3 +1,48 @@
+// Team section auto-scroll
+document.addEventListener('DOMContentLoaded', function () {
+  const foundersContainer = document.querySelector('.founders');
+  const founders = document.querySelectorAll('.founder');
+  
+  if (foundersContainer && founders.length > 0) {
+    // Clone first three items and append to end for smooth infinite scroll
+    const firstThree = Array.from(founders).slice(0, 3);
+    firstThree.forEach(founder => {
+      const clone = founder.cloneNode(true);
+      foundersContainer.appendChild(clone);
+    });
+
+    let currentPosition = 0;
+    const founderWidth = founders[0].offsetWidth;
+    const gap = 40; // This matches the gap in CSS (2.5rem = 40px)
+    const moveAmount = founderWidth + gap;
+
+    function moveFounders() {
+      currentPosition++;
+      const translateX = currentPosition * -moveAmount;
+      foundersContainer.style.transform = `translateX(${translateX}px)`;
+
+      // Reset when we've shown all original items
+      if (currentPosition >= founders.length) {
+        setTimeout(() => {
+          foundersContainer.style.transition = 'none';
+          currentPosition = 0;
+          foundersContainer.style.transform = 'translateX(0)';
+          setTimeout(() => {
+            foundersContainer.style.transition = 'transform 0.5s ease-in-out';
+          }, 50);
+        }, 500);
+      }
+    }
+
+    // Start auto-scroll
+    const interval = setInterval(moveFounders, 3000);
+
+    // Pause on hover
+    // foundersContainer.addEventListener('mouseenter', () => clearInterval(interval));
+    // foundersContainer.addEventListener('mouseleave', () => setInterval(moveFounders, 3000));
+  }
+});
+
 // Optional smooth scroll for navigation
 document.querySelectorAll("a[href^='#']").forEach(anchor => {
   anchor.addEventListener("click", function (e) {

@@ -246,15 +246,19 @@ section {
   font-size: 2rem;
 }
 
+.founders-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
 .founders {
   display: flex;
   gap: 2.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  margin: 2rem auto;
-  padding: 1rem;
-  max-width: 1400px;
+  transition: transform 0.5s ease-in-out;
+  margin: 0 auto;
 }
 
 .founder {
@@ -264,8 +268,9 @@ section {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 300px;
+  flex: 0 0 300px;
   min-width: 280px;
+  margin: 0;
 }
 
 .founder:hover {
@@ -309,14 +314,11 @@ section {
 
 /* Mobile View: Stack founders vertically */
 @media (max-width: 768px) {
-  .founders {
-    flex-direction: column;
-    gap: 1.5rem;
+  .founders-wrapper {
+    max-width: 300px;
   }
   .founder {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+    flex: 0 0 300px;
   }
 }
 
