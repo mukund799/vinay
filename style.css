@@ -274,12 +274,12 @@ section {
 }
 
 .founder img {
-  width: 180px;
+  width: 220px;
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1.5rem;
-  border: 4px solid #0a4344;
+  /* border: 4px solid #0a4344; */
   transition: transform 0.3s ease;
 }
 
