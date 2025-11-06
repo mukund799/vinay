@@ -136,58 +136,170 @@ section {
   border-radius: 8px;
   flex: 1;
 } */
+#services {
+  background: #f8f9fa;
+  padding: 4rem 2rem;
+}
+
+#services h2 {
+  text-align: center;
+  color: #0a4344;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
 .service-list {
   display: flex;
-  gap: 2rem;
-  flex-wrap: wrap; /* allows wrapping if needed on desktop */
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .service {
-  background: #f4f4f4;
-  padding: 1rem;
-  border-radius: 8px;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   flex: 1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+  min-width: 300px;
+  max-width: 380px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service:hover .service-image img {
+  transform: scale(1.1);
+}
+
+.service-content {
+  padding: 1.5rem;
+}
+
+.service-content h3 {
+  color: #0a4344;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.service-content h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: #0a4344;
+  border-radius: 2px;
+}
+
+.service-content p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 /* Mobile view: stack services vertically */
 @media (max-width: 768px) {
   .service-list {
-    flex-direction: column; /* stack items */
-    gap: 1rem;              /* smaller gap for mobile */
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
   .service {
-    flex: unset;            /* remove flex:1 so width is auto */
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  #services {
+    padding: 3rem 1rem;
   }
 }
 
 
 /* ===== Founders Section ===== */
+
+
 .founders {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1400px;
 }
 
 .founder {
   text-align: center;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  min-width: 280px;
+}
+
+.founder:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .founder img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 4px solid #0a4344;
+  transition: transform 0.3s ease;
+}
+
+.founder:hover img {
+  transform: scale(1.05);
+}
+
+.founder h3 {
+  color: #0a4344;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.founder .role {
+  color: #666;
+  font-weight: bold;
   margin-bottom: 1rem;
-  border: 3px solid #0a4344; /* optional */
+  font-size: 1.1rem;
+}
+
+.founder .expertise {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0 0.5rem;
 }
 
 /* Mobile View: Stack founders vertically */
