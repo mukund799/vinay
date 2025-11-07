@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Start auto-scroll
-    const interval = setInterval(moveFounders, 1000);
+    const interval = setInterval(moveFounders, 1500);
 
     // Pause on hover
     // foundersContainer.addEventListener('mouseenter', () => clearInterval(interval));
